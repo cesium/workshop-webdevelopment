@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+
+	<!-- Reset Styles -->
+	<link rel="stylesheet" type="text/css" href="assets/styles/reset.css">
+
+	<!-- Main Styles -->
+	<link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+
+</head>
+<body>
+	<div id="left-content">
+		<div id="user-panel">
+			<div class="avatar">
+				<img src="assets/images/upload/avatar/avatar-default.png" alt="Avatar"/>
+			</div>
+			<div class="welcome">
+				<span>Welcome buddy</span>
+				<br/>
+				<span class="username">Francisco Neves</span>
+			</div>
+			<div class="logout">
+				<a href=""><img src="" alt="Logout"/></a>
+			</div>
+		</div>
+		<div id="lists-names">
+			<a href="#" class="button">Add New List</a>
+			<div id="lists-container">
+				<a href="#">
+					<div class="list">
+						<div class="name">To-Do Workshop Project</div>
+						<div class="remaining">5</div>
+					</div>
+				</a>
+				<a href="#">
+					<div class="list">
+						<div class="name">Database's Project</div>
+						<div class="remaining">23</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="main-content">
+		<header>
+			<div class="list-name">
+				<h1>To-Do Workshop Project</h1>
+			</div>
+			<div class="list-actions">
+				<a href="#" class="button">Edit List</a>
+				<a href="#" class="button red">Delete List</a>
+			</div>
+		</header>
+		<div id="new-task">
+			<form method="post" action="#">
+				<div id="new-task-form">
+					<div><input type="text" placeholder="Enter your new task..." /></div>
+					<div ><input type="submit" class="button" value="Add Task"/></div>
+				</div>
+			</form>
+		</div>
+		<div id="tasks-list-container">
+			<form method="post" action="">
+				<ul id="tasks-list">
+					<li>
+						<div class="status">To Do</div>
+						<input class="check-status" type="checkbox" name="task[]" />
+						<span>Create a really impressive interface for students</span>
+					</li>
+					<li>
+						<div class="status done">Done</div>
+						<input class="check-status" type="checkbox" name="task[]" />
+						<span>Teach them how to use HTML and CSS</span>
+					</li>
+				</ul>
+				<div id="tasks-list-actions">
+					<input type="submit" class="button" value="Mark as Done"/>
+					<input type="submit" class="button" value="Mask as To Do"/>
+					<input type="submit" class="button red" value="Delete Selected"/>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
